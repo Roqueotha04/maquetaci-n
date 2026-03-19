@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>portfolio</h1>
+        
+        <nav>
+            <a href="#experiencia">experiencia</a>
+            <a href="#proyectos">proyectos</a>
+            <a href="https://twitch.tv/midudev">Twitch</a>
+        </nav>
+    </header>
+    <main>
+
+        <dialog id="modal">
+            <h1>nuevo modal</h1>
+            <p>y es god !!</p>
+            <button id="hide">Cerrar modal</button>
+        </dialog>
+
+        <button id="show"> ver</button>
+
+    <script>
+        window.show.addEventListener('click', () =>{
+            window.modal.showModal()
+        })
+
+        window.hide.addEventListener('click', () =>{
+            window.modal.close()
+        })
+    </script>
+    
+    <h1>hola mundo !!</h1>
+
+    <p>+4 años de experiencia programando<strong> aunque nunca chambeando xd</strong></p>
+
+    <h2>experiencia</h2>
+
+    <ul>
+        <li>profesor en utn</li>
+        <li>freelance</li>
+        <li>alto portfolio</li>
+    </ul>
+
+     <img src="/images/gojo.jpg", width="350", height="200">
+
+     <span>Proyectos realizados</span>
+
+     <aside>
+        <header>
+            <h3>Mis tecnologias favoritas</h3>
+        </header>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Node.js</li>
+        </ol>
+     </aside>
+
+     <section>
+        <details>
+            <summary>me gusta el pan</summary>
+            <p>el pan es muy rico ne verdad</p>
+        </details>
+     </section>
+
+     <section>
+        <h2>formulario de contacto</h2>
+        <form action="post" action="/">
+            <fieldset>
+                <legend>informacion personal</legend>
+                
+                <div>
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="midudev">
+                </div>
+                <div>
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email" placeholder="tuemail@gmail.com">
+                </div>
+                <div>
+                    <datalist id="languages">
+                        <option value="java"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                    </datalist>
+                    <label for="dato">quelenguaje desea usar?</label>
+                    <input list="languages" name="languages">
+                </div>
+                
+            </fieldset>
+            <input type="submit" value="Enviar contaacto">
+        </form>
+     </section>
+
+     <div>
+        <p>what</p>
+     </div>
+     <button>pulsa aqui !!</button>
+
+     <section id="proyectos">
+        <article>
+            <header>
+                <h4>Sitio web corporativo</h4>
+            </header>
+            <p>Desarrollo de un sitio web corporativo con interfaz amigable</p>
+            <footer>
+               <small>Tecnologias utilizadas: HTML, CSS, JS</small> 
+            </footer>
+        </article>
+        <!--
+        Aca se puede ver la diferencia entre uno y otro
+        -->
+        <p>.</p>
+        <article>
+            <div>Aplicacion robusta</div>
+            <div>desarrollo de app pro</div>
+            <div>Tecnologias: Java, Spring</div>
+        </article>
+
+     </section>
+     </main>
+
+</body>
+</html>
