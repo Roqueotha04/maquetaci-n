@@ -4,15 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        /*selector{
+            propiedad: valor; declaracion!!
+        }*/
+
+        h1{ /* modifica todos los h1 */
+            color: blue;
+            border-width: 3px;
+            border-style: solid;
+            /*border-color: currentColor;  por defecto usa el currentColor*/
+
+        }
+
+        body{
+            background-color: #ffe4c0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /*Modifico el color de todos los a, pero los de class .link son negros
+        Para class es .class
+        Para id es #id
+
+        Evitar usar IDS y Elementos especificos !!
+        La idea es reutilizar diseño lo mas posible, usar clases.
+        */
+        a{
+            color: red;
+        }
+
+        .link{
+            color: #000;
+        }
+
+        .link:hover{
+            color: blue;
+            outline: 3px solid red;
+        }
+
+        .link:active{
+            outline: 10px solid blue
+        }
+
+        #show{
+            background-color: antiquewhite;
+        }
+
+        .container{
+            color:black;
+            font-size: 32px;
+            border: 3px solid;
+        }
+
+        .child{
+            border: unset;
+        }
+
+        input:focus{
+            border: 3px solid red;
+        }
+
+        li:first-child{
+            color: purple;
+        }
+
+        li:last-child{
+            color: purple;
+        }
+
+        p{
+            font-size: 48px;
+        }
+        
+        .Mardel .bold{
+            color: aqua;
+        }
+
+        .Mardel2 .bold {
+            color: red;
+        }
+        
+         article > p{
+                color: red;
+            }
+
+    </style>
 </head>
 <body>
 
+    <article>
+        <p>Este es un hijo directo</p>
+
+        <footer>
+            <p>Este no es un hijo directo</p>
+        </footer>
+    </article>
+
+    <div class="container">
+        Este es el container
+
+        <div class="child">
+            hola mundooooo
+        </div>
+    </div>
+
+    <p class="Mardel">Que lindo que es estar en <strong class="bold">Mar del plata</strong></p>
+
+    <p class="Mardel2">Que lindo que es estar en <strong class="bold">Mar del plata</strong></p>
     <header>
         <h1>portfolio</h1>
         
         <nav>
-            <a href="#experiencia">experiencia</a>
-            <a href="#proyectos">proyectos</a>
+            <a class="link" href="#experiencia">experiencia</a>
+            <a class="link" href="#proyectos">proyectos</a>
             <a href="https://twitch.tv/midudev">Twitch</a>
         </nav>
     </header>
@@ -35,6 +140,8 @@
             window.modal.close()
         })
     </script>
+
+    
     
     <h1>hola mundo !!</h1>
 

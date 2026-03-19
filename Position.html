@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        section{
+            border: 5px solid #ccc;
+            width: 250px;
+            height: 250px;
+            box-sizing: border-box;
+            position: relative; /*hago que los hijos se muevan dentro de el */
+        }
+
+        .container{
+            background: #09f;
+            width: 100px;
+            height: 100px;
+            position: absolute; /*Absolute: yo elijo donde va. Fixed: depende de la pantalla, se pasa el relative por el culo. 
+            Sticky: se queda pegado a contenedor, pero si muevo pantalla se mueve. (dentro de su contenedor)*/
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <section>
+        <div class="container">
+            container
+        </div>
+
+    </section>
+
+</body>
+</html>
