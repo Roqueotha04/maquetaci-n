@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: lightsalmon;
+            width: 400px;
+            border: 3px solid black;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 150px 150px; /*auto ocupa el resto. 50% ocupa un porcentaje tambien, 10vw ocupa 10% del viewport*/
+            /*fr sirve para fracciones 1fr es una unidad de fraccion, 2fr ocupa el doble del 1fr. Las medidas son relativas*/
+            grid-template-rows: 120px 50px; /* Lo mismo pero para filas, aca aparece lo bidimensional ya*/
+        }
+
+        .container div{
+            background: lightblue;
+            border: 2px solid #09f;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+
+
+    </section>
+    
+</body>
+</html>
