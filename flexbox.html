@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /*Flex es unidireccional, FILAS O COLUMNAS
+        GRID es una cuadricula */
+        .parent{
+            display: flex;
+            flex-direction: row; 
+            flex-wrap: nowrap; /*por defecto es nowrap, el cual los acomoda. el wrap permite salto de linea, el no wrap achica los elementos pa que entren*/
+            border: 4px solid #000;
+            height: 600px;/*Recien el wrap y no wrap se veian iguales porque habia cambiado width a 200px, cuando debia cambiar height ya que era vertical*/
+            width: 700px;
+            justify-content: center;
+            gap: 100px; /*espacio forzado entre elementos*/
+            align-items: center;
+            align-content: center ; /* sirve cuando hay varias lineas*/
+        }   
+
+        .item{
+            border: 1px solid;
+            opacity: .9;
+            width: 100px;
+            height: 100px;
+            background: #09f;
+            
+            flex-grow: 0; /*agranda elementos si sobra espacio*/
+            flex-shrink: 1; /*achica elementos si falta espacio*/
+            flex-basis: auto; /*por defecto ocupan 100 de hecho, si le pongo mas se ajustan en general por el flex-shrink activado. Si se pasan y el shrink esta en 0 se desborda*/
+            /*flex 1 se usa mucho, es 1, 1, 0. Sirve para que todos midan lo mismo, se agranden y achiquen*/
+        }
+
+        .item:first-child{
+            background: red;
+        }
+
+        .item:last-child{
+            background-color: yellow;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <section class="parent">
+        <div class="item">
+            1
+        </div>
+        <div class="item">
+            2
+        </div>
+        <div class="item">
+            3
+        </div>
+        
+    </section>
+
+</body>
+</html>
