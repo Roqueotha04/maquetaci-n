@@ -10,20 +10,31 @@
             border: 3px solid black;
             border-radius: 10px;
             display: grid;
-            /*repeat sirve para valores repetidos*/
-            grid-template-columns: minmax(30px, 1fr) 20fr; /*auto ocupa el resto. 50% ocupa un porcentaje tambien, 10vw ocupa 10% del viewport*/
-            /*fr sirve para fracciones 1fr es una unidad de fraccion, 2fr ocupa el doble del 1fr. Las medidas son relativas*/
-            grid-template-rows: 120px 50px; /* Lo mismo pero para filas, aca aparece lo bidimensional ya | Si me paso de elementos sera la parte vacia*/
-            grid-auto-rows: 70px; /* lo no especificado se genera en 70 px*/
+            grid-template-columns: minmax(100px, 1fr) 1fr 1fr; 
+            grid-auto-rows: 70px;
             column-gap: 10px;
             row-gap: 20px;
-            border-radius: 8px;
         }
 
         .container div{
             background: lightblue;
             border: 2px solid #09f;
             border-radius: 6px;
+        }
+
+        .container div:first-child{
+            background: lightgreen;
+            border: 2px solid green;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .container div:nth-child(2){
+            background-color: red;
+            border: 2px solid blue;
+            /* con span en vez de decirle de donde a donde va le digo cuanto ocupa. Ocupa 3 columas y 2 filas.*/
+            grid-column-start: span 3;
+            grid-column-end:span 2;
         }
     </style>
 </head>
